@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/workspaces/Estudo/C++",
-      "program": "/workspaces/Estudo/C++/build/Debug/outDebug",
+      "cwd": "/workspaces/Estudo/web",
+      "program": "/workspaces/Estudo/web/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

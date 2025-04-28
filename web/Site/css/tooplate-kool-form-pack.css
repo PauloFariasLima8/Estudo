@@ -217,7 +217,8 @@ strong {
   color: var(--white-color);
   font-size: var(--p-font-size);
   font-weight: var(--font-weight-bold);
-  margin-left: 10px; /* Add margin to separate logo and text */
+  margin-left: 10px;
+  margin-right: 50px;
 }
 
 .site-header .social-icon {

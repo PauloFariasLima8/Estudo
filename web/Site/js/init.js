@@ -3,8 +3,8 @@ $(document).ready(function() {
     // Contador de usuários
     let counter = 20000;
     const target = 24000;
-    const increment = 10;
-    const speed = 50;
+    const increment = 5;
+    const speed = 100;
 
     const counterElement = $('.days');
     

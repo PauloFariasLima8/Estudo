@@ -2,3 +2,19 @@ modules = ["web", "nodejs-20", "python-3.12", "c-clang14"]
 
 [nix]
 channel = "stable-24_05"
+
+[workflows]
+runButton = "Servidor Web"
+
+[[workflows.workflow]]
+name = "Servidor Web"
+author = 22020638
+mode = "sequential"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "cd web/Site && python -m http.server 5000 --bind 0.0.0.0"
+
+[[ports]]
+localPort = 5000
+externalPort = 80

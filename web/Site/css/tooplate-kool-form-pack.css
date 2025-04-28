@@ -611,4 +611,5 @@ strong {
   height: 40px;
   margin-right: 10px;
   object-fit: contain;
+  border-radius: 50%;
 }

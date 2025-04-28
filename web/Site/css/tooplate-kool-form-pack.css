@@ -202,12 +202,15 @@ strong {
 }
 
 .site-header .container {
-  background-color: rgba(0, 0, 0, 0.65);
+  background-color: rgba(0, 0, 0, 0.85);
   border-radius: var(--border-radius-large);
   padding: 15px 25px;
   max-height: 70px;
   display: flex;
-  align-items: center; /* Align items vertically */
+  align-items: center;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .site-header-text {

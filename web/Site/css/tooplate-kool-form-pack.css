@@ -1,4 +1,3 @@
-
 /*---------------------------------------
   CUSTOM PROPERTIES ( VARIABLES )             
 -----------------------------------------*/
@@ -187,12 +186,6 @@ strong {
 
 .custom-btn-group .link:hover {
   color: var(--link-hover-color);
-}
-
-.Catalago {
-    display: flex;
-    justify-content: center;/*Centraliza Horizontal*/
-    margin-top: 20px;
 }
 
 /*---------------------------------------
@@ -591,3 +584,25 @@ strong {
   }
 }
 
+.catalogo {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.customCatalogoButton {
+    background: var(--custom-btn-bg-color);
+    color: var(--white-color);
+    border: none;
+    padding: 10px 25px;
+    border-radius: var(--border-radius-large);
+    font-weight: var(--font-weight-bold);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.customCatalogoButton:hover {
+    background: var(--custom-btn-bg-hover-color);
+}

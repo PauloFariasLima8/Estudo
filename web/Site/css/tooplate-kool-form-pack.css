@@ -206,16 +206,15 @@ strong {
   border-radius: var(--border-radius-large);
   padding: 15px 25px;
   max-height: 70px;
+  display: flex;
+  align-items: center; /* Align items vertically */
 }
 
 .site-header-text {
   color: var(--white-color);
   font-size: var(--p-font-size);
   font-weight: var(--font-weight-bold);
-}
-
-.site-header-text span {
-  margin-left: 10px;
+  margin-left: 10px; /* Add margin to separate logo and text */
 }
 
 .site-header .social-icon {
@@ -605,4 +604,11 @@ strong {
 
 .customCatalogoButton:hover {
     background: var(--custom-btn-bg-hover-color);
+}
+
+.header-logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  object-fit: contain;
 }

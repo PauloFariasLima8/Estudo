@@ -228,6 +228,10 @@ strong {
   max-height: 35px;
 }
 
+.container {
+  padding-left: 0; /* Remove o padding esquerdo do contêiner */
+}
+
 .offcanvas {
   background-color: rgba(0, 0, 0, 0.85);
   padding: 30px;
@@ -359,22 +363,36 @@ strong {
   COUNTDOWN              
 -----------------------------------------*/
 .countdown {
-  padding-left:100px;
+  display: flex; /* Alinha os itens lado a lado */
+  justify-content: space-between; /* Espaça os itens uniformemente */
+  align-items: center; /* Centraliza verticalmente os itens */
+  padding-left: 0; /* Remove o padding extra */
 }
 
 .countdown-title {
   color: var(--white-color);
+  font-size: 1.5rem; /* Ajuste o tamanho do texto conforme necessário */
+  margin-bottom: 10px; /* Espaçamento entre o título e o texto */
 }
 
 .countdown-item {
   list-style: none;
-  flex: 0 0 40%;
-  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centraliza verticalmente o conteúdo */
+  align-items: center; /* Centraliza horizontalmente o conteúdo */
+  width: 45%; /* Define uma largura proporcional para cada item */
+  min-height: 150px; /* Define uma altura mínima */
+  text-align: center; /* Centraliza o texto */
+}
+
+.countdown-item:first-child {
+  margin-top: -25px; /* Ajuste o valor para subir o botão */
 }
 
 .countdown-text {
   color: var(--section-bg-color);
-  font-size: var(--p-font-size);
+  font-size: 1rem; /* Ajuste o tamanho do texto conforme necessário */
   font-style: italic;
 }
 
@@ -545,6 +563,16 @@ strong {
   color: var(--white-color);
 }
 
+<li class="social-icon-item">
+    <a href="#" class="social-icon-link bi-instagram"></a>
+</li>
+<li class="social-icon-item">
+    <a href="#" class="social-icon-link bi-twitter"></a>
+</li>
+<li class="social-icon-item">
+    <a href="#" class="social-icon-link bi-whatsapp"></a>
+</li>
+
 
 /*---------------------------------------
   RESPONSIVE STYLES               
@@ -618,9 +646,33 @@ strong {
 }
 
 .header-logo {
-  width: 40px;
-  height: 40px;
-  margin-right: 10px;
-  object-fit: contain;
-  border-radius: 50%;
+    width: 40px; /* Ajuste o tamanho conforme necessário */
+    height: 40px; /* Ajuste o tamanho conforme necessário */
+    margin-right: 10px; /* Espaçamento entre o logo e o texto */
+    object-fit: contain; /* Garante que a imagem se ajuste ao tamanho */
+    border-radius: 50%; /* Opcional: deixa o logo circular */
+}
+
+.texto-destaque {
+    font-size: 1.5rem; /* Ajuste o tamanho conforme necessário */
+    font-weight: bold; /* Opcional: para destacar mais */
+    margin-bottom: 40px; /* Adiciona espaçamento abaixo do texto */
+}
+
+.no-wrap {
+    white-space: nowrap;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+    margin-left: -20px; /* Ajuste o valor para mover mais à esquerda */
+}
+
+.custom-left {
+    margin-left: -90px; /* Ajuste o valor para mover mais à esquerda */
+    margin-top: 20px; /* Opcional: ajusta o espaçamento acima do nome da empresa */
 }
